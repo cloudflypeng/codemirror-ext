@@ -1,3 +1,6 @@
+
+[简体中文](https://github.com/cloudflypeng/codemirror-ext/blob/main/README.cn.md)|[English](https://github.com/cloudflypeng/codemirror-ext)
+
 这是一个基于 CodeMirror 的图片上传插件，支持通过粘贴或拖放图片并上传图片到服务器。该插件允许使用默认的 fetch 上传逻辑或者自定义的上传逻辑。
 
 安装

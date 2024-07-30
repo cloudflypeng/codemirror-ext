@@ -1,3 +1,5 @@
+[简体中文](https://github.com/cloudflypeng/codemirror-ext/blob/main/README.cn.md)|[English](https://github.com/cloudflypeng/codemirror-ext)
+
 This is an image upload plugin for CodeMirror that supports pasting or dragging and dropping images and uploading them to a server. The plugin allows using either a default fetch upload logic or custom upload logic.
 
 ```bash
