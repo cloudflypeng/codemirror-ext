@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "codemirror": "^6.0.1",
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
+  },
+  "peerDependencies": {
+    "codemirror": "^6.0.1"
   }
 }

@@ -7,6 +7,9 @@ export default defineConfig({
       entry: 'src/main.ts',
       name: 'codemirror-ext',
       fileName: 'codemirror-ext'
+    },
+    rollupOptions: {
+      external: ['codemirror']
     }
   }
 })
