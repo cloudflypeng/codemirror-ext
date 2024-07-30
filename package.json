@@ -1,0 +1,18 @@
+{
+  "name": "@meanc/codemirror-ext",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/codemirror-ext.umd.js",
+  "module": "dist/codemirror-ext.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "codemirror": "^6.0.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4"
+  }
+}
