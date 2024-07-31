@@ -1,11 +1,21 @@
 // codemirror 上传图片插件
 // 默认使用fetch上传, 可以自己写上传逻辑
 import { EditorView } from "codemirror";
+import { Extension } from '@codemirror/state'
 
 type picUploadOptions = {
   storageServer?: string;
   upload?: (file: File) => Promise<string>;
   callback?: (res: any) => string;
+}
+
+type officialOptions = {
+  storageServer: string;
+  callback: (res: any) => string;
+}
+
+type customOptions = {
+  upload: (file: File) => Promise<string>;
 }
 
 const getLoadingText = (file: File) => {
@@ -49,7 +59,9 @@ const getStragedUrl = async (file: File, options: picUploadOptions) => {
 
 let cursorPos: null | number = null;
 
-const PicUploadExt = (options: picUploadOptions) => {
+function PicUploadExt(options: officialOptions): Extension;
+function PicUploadExt(options: customOptions): Extension;
+function PicUploadExt(options: picUploadOptions) {
   return EditorView.domEventHandlers({
     paste(event, view) {
       // 查看剪贴板的内容

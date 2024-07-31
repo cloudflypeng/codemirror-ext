@@ -10,6 +10,9 @@ dependencies:
     version: 6.0.1(@lezer/common@1.2.1)
 
 devDependencies:
+  '@codemirror/state':
+    specifier: ^6.4.1
+    version: 6.4.1
   typescript:
     specifier: ^5.2.2
     version: 5.5.4
@@ -71,7 +74,6 @@ packages:
 
   /@codemirror/state@6.4.1:
     resolution: {integrity: sha512-QkEyUiLhsJoZkbumGZlswmAhA7CBU02Wrz7zvH4SrcifbsqwlXShVXg65f3v/ts57W3dqyamEriMhij1Z3Zz4A==}
-    dev: false
 
   /@codemirror/view@6.29.1:
     resolution: {integrity: sha512-7r+DlO/QFwPqKp73uq5mmrS4TuLPUVotbNOKYzN3OLP5ScrOVXcm4g13/48b6ZXGhdmzMinzFYqH0vo+qihIkQ==}
