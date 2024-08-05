@@ -3,6 +3,11 @@
 import { EditorView } from "codemirror";
 import { Extension } from '@codemirror/state'
 
+import {
+  getLoadingText,
+  isUrl
+} from '../utils'
+
 type picUploadOptions = {
   storageServer?: string;
   upload?: (file: File) => Promise<string>;
@@ -16,15 +21,6 @@ type officialOptions = {
 
 type customOptions = {
   upload: (file: File) => Promise<string>;
-}
-
-const getLoadingText = (file: File) => {
-  const loadingText = `![loading...](${file.name})`;
-  return loadingText;
-}
-
-const isUrl = (url: string) => {
-  return /^http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- ./?%&=]*)?$/.test(url)
 }
 
 const getStragedUrl = async (file: File, options: picUploadOptions) => {
